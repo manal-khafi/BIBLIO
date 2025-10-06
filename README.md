@@ -41,3 +41,46 @@ Notes
 - Frontend will fallback to localStorage when API is unavailable.
 - Import/Export JSON works for both modes.
 
+  # Biblio
+
+A simple library management system (Frontend + API).
+
+## Features
+
+- Manage members, librarians, categories, books, loans, and users
+- Switch between localStorage and MongoDB backend
+- Import/export data as JSON
+- Responsive SPA interface
+
+## Installation
+
+```bash
+git clone https://github.com/manal-khafi/BIBLIO.git
+cd BIBLIO
+npm install
+```
+
+## Usage
+
+- **Start backend:**  
+  ```bash
+  npm run dev
+  ```
+- **Open `index.html` in your browser** for the frontend.
+
+## Configuration
+
+- Edit `server/.env` to set your MongoDB connection string.
+
+## API
+
+- The backend runs at `http://127.0.0.1:4000/api`.
+
+## License
+
+ISC
+
+## Issues
+
+Report bugs [here](https://github.com/manal-khafi/BIBLIO/issues).
+
