@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblio - Library Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Biblio</div>
+      <nav class="nav">
+        <a href="#/adherents" data-route>Adhérents</a>
+        <a href="#/bibliothecaires" data-route>Bibliothécaires</a>
+        <a href="#/categories" data-route>Catégories</a>
+        <a href="#/livres" data-route>Livres</a>
+        <a href="#/emprunts" data-route>Emprunts</a>
+        <a href="#/users" data-route>Users</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="exportBtn" class="btn btn-secondary">Exporter JSON</button>
+        <label class="import-label btn btn-secondary">
+          Importer JSON
+          <input id="importInput" type="file" accept="application/json" hidden>
+        </label>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <input id="searchInput" type="search" placeholder="Rechercher..." aria-label="Rechercher">
+        <button id="newBtn" class="btn btn-primary">Nouveau</button>
+      </header>
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <template id="tableTemplate">
+    <div class="table-wrap">
+      <table class="table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </template>
+
+  <template id="formTemplate">
+    <form class="form"></form>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
